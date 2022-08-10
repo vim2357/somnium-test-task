@@ -1,0 +1,60 @@
+.books {
+    margin: 20px auto;
+    width: 80%;
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.card {
+    width: 300px;
+    height: 450px;
+    
+    overflow: hidden;
+    padding: 10px;
+    margin: 40px 0px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px 10px rgba(25,25,25,0.1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card__image {
+    width: 100%;
+    max-width: 200px;
+    max-height: 300px;
+    display: block;
+    object-fit: cover;
+    
+}
+.card__price {
+    margin: 10px 0px;
+    font-size: 18px;
+    line-height: 30px;
+}
+.card__image-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card__add-button {
+    width: 100%;
+    height: 30px;
+    display: block;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 800;
+    background-color: rgb(69,90,100);
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+}
+.card__add-button:hover {
+    background-color: #1c1c1c;
+}
+.card__add-button:active {
+    transform: translateY(-2px);
+}
